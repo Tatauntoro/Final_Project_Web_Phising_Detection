@@ -1,4 +1,4 @@
-# Web Phishing Detection with Deep Learning
+# Web Phishing Detection
 The main goal of this repository is to identify and classify phishing websites using deep learning techniques. Phishing websites are malicious sites that try to trick users into providing sensitive information, such as usernames, passwords, and credit card details, by pretending to be trustworthy entities. The raw data being analyzed here are URLs and HTML content of websites. URL analysis involves examining the structure and contents of the URL for signs of phishing, such as misspelled domain names or suspicious subdomains. HTML content analysis involves examining the actual contents of the webpage, such as forms that ask for sensitive information, the presence of suspicious scripts, or the overall structure and design of the page.
 
 
@@ -36,7 +36,7 @@ Data        0
 dtype: int64
 
 
-# Exploratory Data Analysis
+# Data Visualization
 
 ### URL and HTML Distribution
 The distribution of HTML and URL is visualized using donut charts.
@@ -148,17 +148,6 @@ F1 Score: 0.9697
 ```
 
 
-# Training & Validation Loss and Accuracy
-
-```
-
-# Extracting values from the history object training_loss = history.history['loss'] validation_loss = history.history['val_loss'] training_accuracy = history.history['accuracy'] validation_accuracy = history.history['val_accuracy'] # Epochs range epochs_range = range(1, len(training_loss) + 1)
-# Plotting Training and Validation Loss plt.figure(figsize=(7, 5)) plt.plot(epochs_range, training_loss, label='Training Loss') plt.plot(epochs_range, validation_loss, label='Validation Loss') plt.title('Training and Validation Loss', fontweight='bold') plt.xlabel('Epochs') plt.ylabel('Loss') plt.legend() plt.savefig('loss_plot.png') # Save the figure as an image plt.show()
-
-# Plotting Training and Validation Accuracy plt.figure(figsize=(7, 5)) plt.plot(epochs_range, training_accuracy, label='Training Accuracy') plt.plot(epochs_range, validation_accuracy, label='Validation Accuracy') plt.title('Training and Validation Accuracy', fontweight='bold') plt.xlabel('Epochs') plt.ylabel('Accuracy') plt.legend() plt.savefig('accuracy_plot.png') # Save the figure as an image plt.show()
-
-
-```
 
 
 
